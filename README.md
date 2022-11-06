@@ -96,7 +96,7 @@ AltBlog is a project built for my Altschool second semester exam project. It was
 
 ### Built With
 
-* [![Flask][Flask]][Pytho-url]
+* [![Flask][Flask]][Python-url]
 * [![HTML][HTML5]][HTML-url]
 * [![SQLite][SQLite]][SQLite-url]
 
