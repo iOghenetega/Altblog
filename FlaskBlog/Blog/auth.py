@@ -49,7 +49,6 @@ def sign_up():
     if request.method == "POST":
         email = request.form.get('email')
         username = request.form.get('username')
-        age = request.form.get('age')
         firstName = request.form.get('firstName')
         lastName = request.form.get('lastName')
         password1 = request.form.get('password1')
@@ -76,7 +75,6 @@ def sign_up():
             new_user = User(
                     email=email, 
                     username = username,
-                    age = age,
                     firstName = firstName,
                     lastName = lastName, 
                     gender = gender,
@@ -119,23 +117,35 @@ def create_post():
 @login_required
 def edit(id):
     post = Post.query.filter_by(id=id).first()
-    title = post.title
-    body = post.body
-    if request.method == "POST":
-        new_title = request.form.get('title')
-        new_body = request.form.get('body')
+    if current_user.id == post.post_user.id:
+        title = post.title
+        body = post.body
+        if request.method == "POST":
+            new_title = request.form.get('title')
+            new_body = request.form.get('body')
 
-        if len(new_title) < 4:
-            flash("Title is too Short!!!", category='error')
-        elif len(new_body) < 10:
-            flash("Article is too short!!!", category='error')
-        else:
-            post.title = new_title
-            post.body = new_body
-            db.session.commit()
-            flash("You have successfully updated your post!", category='success')
-            
-            return redirect(url_for('views.home'))
-    
-    return render_template('edit.html', user=current_user, title=title, body=body)
+            if len(new_title) < 4:
+                flash("Title is too Short!!!", category='error')
+            elif len(new_body) < 10:
+                flash("Article is too short!!!", category='error')
+            else:
+                post.title = new_title
+                post.body = new_body
+                db.session.commit()
+                flash("You have successfully updated your post!", category='success')
+                
+                return redirect(url_for('views.home'))
+        
+        return render_template('edit.html', user=current_user, title=title, body=body)
+    else:
+     flash('You are not authorized to make changes to this post')
+     return redirect(url_for('views.home'))
 
+
+@auth.route('/delete/<int:id>', methods=["GET"])
+@login_required
+def delete_post(id):
+    user_to_delete = User.query.get_or_404(id)
+    db.session.delete(user_to_delete)
+    db.session.commit()
+    return redirect(url_for('views.home'))
