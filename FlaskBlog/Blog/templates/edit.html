@@ -23,5 +23,20 @@
         </div>
     </form>
 
-    
+    <h1>
+        Delete post
+    </h1>
+
+    <form method="post" class="signup">
+        <div>
+            <input type="text" id="title" name="title" value="{{title}}">
+        </div>
+        <div>
+            <textarea data-editor="markdown" name="body" id="body" cols="30" rows="10">{{ body }}</textarea>
+        </div>
+
+        <div>
+            <button type="submit">Delete post</button>
+        </div>
+    </form>
 {% endblock %}
