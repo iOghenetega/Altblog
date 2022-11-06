@@ -202,7 +202,7 @@ Project Link: [https://github.com/iOghenetega/Altblog](https://github.com/iOghen
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [Thanks For Helping me debug, Dipo!](https://github.com/dipo-jaiye)
 * []()
 * []()
 
