@@ -117,7 +117,7 @@ def create_post():
 @login_required
 def edit(id):
     post = Post.query.filter_by(id=id).first()
-    if current_user.id == post.post_user.id:
+#     if current_user.id == post.post_user.id:
         title = post.title
         body = post.body
         if request.method == "POST":
@@ -137,15 +137,15 @@ def edit(id):
                 return redirect(url_for('views.home'))
         
         return render_template('edit.html', user=current_user, title=title, body=body)
-    else:
-     flash('You are not authorized to make changes to this post')
-     return redirect(url_for('views.home'))
+#     else:
+#      flash('You are not authorized to make changes to this post')
+#      return redirect(url_for('views.home'))
 
 
-@auth.route('/delete/<int:id>', methods=["GET"])
-@login_required
-def delete_post(id):
-    user_to_delete = User.query.get_or_404(id)
-    db.session.delete(user_to_delete)
-    db.session.commit()
-    return redirect(url_for('views.home'))
+# @auth.route('/delete/<int:id>', methods=["GET"])
+# @login_required
+# def delete_post(id):
+#     user_to_delete = User.query.get_or_404(id)
+#     db.session.delete(user_to_delete)
+#     db.session.commit()
+#     return redirect(url_for('views.home'))
