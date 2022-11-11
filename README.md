@@ -146,7 +146,7 @@ Python3: [Get Python](https://www.python.org/downloads/)
 
 <br />
 
-[![Ze Blog Screenshot][ze-blog-screenshot]](https://github.com/iOghenetega/Altblog/blob/main/static/screenshot.png)
+[![Altblog][Altblog-screenshot]](https://github.com/iOghenetega/Altblog/blob/main/static/screenshot.png)
 
 <br/>
 
@@ -168,7 +168,7 @@ Distributed under the MIT License. See <a href="https://github.com/iOghenetega/A
 
 Kaide Oghenetega - [@_onlytega](https://mobile.twitter.com/_onlytega) - 
 
-Project Link: [Alt blog](https://github.com/iOghenetega/Altblog)
+Project Link: [Altblog](https://github.com/iOghenetega/Altblog)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
