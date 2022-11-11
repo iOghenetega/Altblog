@@ -15,8 +15,8 @@
 <!-- Project Logo -->
 <br />
 <div align="center">
-  <a href="https://github.com/Ze-Austin/ze-blog">
-    <img src="static/Ze_Blog_logo/site.png" alt="Logo" width="90%" height="30%">
+  <a href="https://github.com/iOghenetega/Altblog">
+    <img src="static/Altblog/site.png" alt="Logo" width="90%" height="30%">
   </a>
 </div>
 
@@ -24,14 +24,14 @@
 
 <div>
   <p align="center">
-    <a href="https://github.com/Ze-Austin/ze-blog#readme"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/iOghenetega/Altblog#readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Ze-Austin/ze-blog/blob/main/static/screenshot.png">View Demo</a>
+    <a href="https://github.com/iOghenetega/Altblog/blob/main/static/screenshot.png">View Demo</a>
     ·
-    <a href="https://github.com/Ze-Austin/ze-blog/issues">Report Bug</a>
+    <a href="https://github.com/iOghenetega/Altblog/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Ze-Austin/ze-blog/issues">Request Feature</a>
+    <a href="https://github.com/iOghenetega/Altblog/issues">Request Feature</a>
   </p>
 </div>
 
@@ -42,7 +42,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-ze-blog">About Ze Blog</a>
+      <a href="#about-Altblog">About Altblog</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -68,13 +68,13 @@
 ---
 
 <!-- About the Blog -->
-## About Ze Blog
+## About Altblog
 
-Ze Blog is a safe space for you to explore the thoughts and experiences of fellow citizens of the internet, and share yours too.
+Altblog is a alternative space for you to explore your thoughts and experiences 
 
 Authentication is not required to read articles on this blog, but you'll have log in to post, edit or delete your articles.
 
-Ze Blog was built as an exam project by <a href="https://www.github.com/Ze-Austin">Ze Austin</a>, a Backend Engineering student at <a href="https://altschoolafrica.com/schools/engineering">AltSchool Africa</a> who's learning to create magic with the Python Flask framework. 
+Altblog was built as an exam project by <a href="https://www.github.com/iOghenetega">Oghenetega Kaide</a>, a Backend Engineering student at <a href="https://altschoolafrica.com/schools/engineering">AltSchool Africa</a> who's learning to create magic with the Python Flask framework. 
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -121,7 +121,7 @@ Python3: [Get Python](https://www.python.org/downloads/)
 
 1. Clone this repo
    ```sh
-   git clone https://github.com/Ze-Austin/ze-blog.git
+   git clone https://github.com/iOghenetega/Altblog.git
    ```
 2. Activate the virtual environment
    ```sh
@@ -146,7 +146,7 @@ Python3: [Get Python](https://www.python.org/downloads/)
 
 <br />
 
-[![Ze Blog Screenshot][ze-blog-screenshot]](https://github.com/Ze-Austin/ze-blog/blob/main/static/screenshot.png)
+[![Ze Blog Screenshot][ze-blog-screenshot]](https://github.com/iOghenetega/Altblog/blob/main/static/screenshot.png)
 
 <br/>
 
@@ -157,7 +157,7 @@ Python3: [Get Python](https://www.python.org/downloads/)
 <!-- License -->
 ## License
 
-Distributed under the MIT License. See <a href="https://github.com/Ze-Austin/ze-blog/blob/main/LICENSE">LICENSE</a> for more information.
+Distributed under the MIT License. See <a href="https://github.com/iOghenetega/Altblog/blob/main/LICENSE">LICENSE</a> for more information.
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
